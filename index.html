@@ -5,137 +5,186 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zisan Mahmud</title>
   <meta name="description" content="Academic portfolio of Zisan Mahmud: AI, NLP and data mining research, publications, education and teaching.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%2352adc8' d='M12 3 1 9l11 6 9-4.9V17h2V9L12 3z'/%3E%3Cpath fill='%2352adc8' d='M5 13.2v4c0 1.7 3.1 3.3 7 3.3s7-1.6 7-3.3v-4l-7 3.8-7-3.8z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t && window.matchMedia('(prefers-color-scheme: dark)').matches) t = 'dark';
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 </head>
 <body>
-  <nav class="topnav">
-    <a href="#top">Homepage</a>
-    <a href="assets/cv.pdf">CV</a>
-    <a href="#education">Education</a>
-    <a href="#publications">Publications</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#awards">Honors and Awards</a>
-    <a href="#skills">Skills</a>
-  </nav>
+  <header class="masthead">
+    <div class="bar">
+      <a class="site-title" href="#top">Zisan Mahmud</a>
+      <nav class="nav-links" aria-label="Sections">
+        <a href="#top">Home</a>
+        <a href="#news">News</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#research">Research</a>
+        <a href="#awards">Awards</a>
+        <a href="#skills">Skills</a>
+        <a href="assets/cv.pdf">CV</a>
+      </nav>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle dark mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+    </div>
+  </header>
 
-  <main id="top">
-    <section class="profile">
+  <div class="page" id="top">
+    <aside class="author">
       <img class="avatar" src="assets/photo.jpg" alt="Zisan Mahmud" onerror="this.style.display='none'">
-      <div>
-        <h3>Zisan Mahmud</h3>
-        <ul>
-          <li>M.Sc. Student, Department of Computer Science and Engineering, University of Dhaka</li>
-          <li>Adjunct Lecturer, Dept. of CSE, International Islamic University Chittagong</li>
-          <li>Dhaka, Bangladesh</li>
-          <li>Email: <a href="mailto:zisan.mahmud260@gmail.com">zisan.mahmud260@gmail.com</a></li>
-        </ul>
-        <p class="icons">
-          <a href="assets/cv.pdf">Resume</a>
-          <a href="https://scholar.google.com/citations?user=mQ5UBc4AAAAJ&amp;hl">Google Scholar</a>
-          <a href="https://github.com/zisan23">GitHub</a>
-          <a href="https://www.linkedin.com/in/zisan260">LinkedIn</a>
-          <a href="https://orcid.org/0009-0002-3468-7579">ORCID</a>
-        </p>
+      <h1>Zisan Mahmud</h1>
+      <p class="bio">M.Sc. student, University of Dhaka<br>Adjunct Lecturer, IIUC</p>
+      <ul class="contact">
+        <li><i class="fa-solid fa-file-pdf"></i> <a href="assets/cv.pdf">Resume</a></li>
+        <li><i class="fa-solid fa-location-dot"></i> Dhaka, Bangladesh</li>
+        <li><i class="fa-solid fa-building-columns"></i> University of Dhaka</li>
+        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:zisan.mahmud260@gmail.com">Email</a></li>
+        <li><i class="fa-brands fa-google-scholar"></i> <a href="https://scholar.google.com/citations?user=mQ5UBc4AAAAJ&amp;hl">Google Scholar</a></li>
+      </ul>
+    </aside>
+
+    <main class="content">
+      <p>
+        I'm Zisan Mahmud. I finished my B.Sc. in Computer Science and Engineering at the University of
+        Dhaka in 2026 with a CGPA of 3.75 out of 4.00, and I'm now doing my M.Sc. in the same
+        department. My research interests are AI, NLP, data mining, educational data mining and graph
+        mining.
+      </p>
+      <p>
+        My thesis was on Bangla memes: how a meme carries a cultural metaphor, and how a model can
+        interpret it. With my supervisor
+        <a href="https://www.du.ac.bd/faculty/faculty_details/CSE/61068">Md. Fahim Arefin</a>, I built
+        BanglaMemeX, a multimodal explainable dataset for this task, and the paper was accepted to
+        Findings of EMNLP 2026. I also co-authored a TMLR 2026 paper on hyperedge anomaly detection
+        with hypergraph neural networks.
+      </p>
+      <p>
+        I teach Computer Algorithms, both theory and lab, as an Adjunct Lecturer at International
+        Islamic University Chittagong. Next, I want to focus on applying AI in education and on finding ways to get more benefit
+        out of educational AI.
+      </p>
+
+      <h2 id="education">Education</h2>
+      <ul>
+        <li><strong>M.Sc. in Computer Science and Engineering</strong> <span class="when">[2026 – Present]</span>
+          <ul><li>University of Dhaka</li></ul></li>
+        <li><strong>B.Sc. in Computer Science and Engineering</strong> <span class="when">[2022 – 2026]</span>
+          <ul>
+            <li>University of Dhaka · CGPA: 3.75 / 4.00</li>
+            <li>Thesis: <em>Advancing Cultural Metaphoric Image Interpretation in Bangla with a Multimodal Explainable Dataset</em></li>
+          </ul></li>
+        <li><strong>Higher Secondary Certificate (Science)</strong> <span class="when">[2018 – 2020]</span>
+          <ul><li>Notre Dame College, Dhaka · GPA: 5.00 / 5.00</li></ul></li>
+      </ul>
+
+      <h2 id="publications">Publications</h2>
+      <div class="card">
+        <div class="badges"><span class="badge">Findings of EMNLP 2026</span><span class="badge alt">Conference</span><span class="badge alt">Multimodal NLP</span></div>
+        <h3>BanglaMemeX: Advancing Cultural Metaphoric Image Interpretation in Bangla with a Multimodal Explainable Dataset</h3>
+        <p class="authors">Md. Sadman Sakib, <strong>Zisan Mahmud</strong>, Md. Fahim Arefin, Md Fahim</p>
+        <p class="tags"><span>bangla</span><span>memes</span><span>metaphor</span><span>explainability</span></p>
+        <p class="links"><a href="https://arxiv.org/abs/2609.08029">Paper</a></p>
       </div>
-    </section>
+      <div class="card">
+        <div class="badges"><span class="badge">TMLR 2026</span><span class="badge alt">Journal</span><span class="badge alt">Data Mining</span></div>
+        <h3>Hyperedge Anomaly Detection with Hypergraph Neural Network</h3>
+        <p class="authors">Md. Tanvir Alam, Md Mahmudur Rahman, Md. Fahim Arefin, Chowdhury Farhan Ahmed, <strong>Zisan Mahmud</strong>, Md. Sadman Sakib, Carson Leung</p>
+        <p class="tags"><span>hypergraphs</span><span>anomaly detection</span><span>graph neural networks</span></p>
+        <p class="links"><a href="https://arxiv.org/abs/2412.05641">Paper</a></p>
+      </div>
 
-    <p>
-      I am a graduate student and lecturer working on <strong>artificial intelligence</strong>,
-      <strong>natural language processing</strong> and <strong>data mining</strong>. My recent research
-      focuses on multimodal understanding for low-resource languages, such as cultural metaphor
-      interpretation in Bangla memes, and on anomaly detection with graph neural networks.
-    </p>
-    <p class="summary">
-      <strong>Profile summary:</strong> B.Sc. CGPA 3.75/4.00 (University of Dhaka) ·
-      1 journal paper (TMLR 2026) · 1 conference paper (Findings of EMNLP 2026).
-    </p>
+      <h2 id="teaching">Teaching</h2>
+      <ul>
+        <li><strong>Adjunct Lecturer</strong> <span class="when">[Sep 2026 – Present]</span>
+          <ul>
+            <li>Department of CSE, <a href="https://www.iiuc.ac.bd/web/fse/cse">International Islamic University Chittagong</a></li>
+            <li>Teach undergraduate Computer Algorithms theory and lab courses.</li>
+          </ul></li>
+      </ul>
 
-    <h2 id="education"><u>🎓 Education</u></h2>
-    <ul>
-      <li><strong>M.Sc. in Computer Science and Engineering</strong> [2026 – Present]
-        <ul><li>University of Dhaka</li></ul></li>
-      <li><strong>B.Sc. in Computer Science and Engineering</strong> [2022 – 2026]
-        <ul>
-          <li>University of Dhaka · CGPA: 3.75 / 4.00</li>
-          <li>Thesis: <em>Advancing Cultural Metaphoric Image Interpretation in Bangla with a Multimodal Explainable Dataset</em> (Supervisor: Md. Fahim Arefin)</li>
-        </ul></li>
-      <li><strong>Higher Secondary Certificate (Science)</strong> [2018 – 2020]
-        <ul><li>Notre Dame College, Dhaka · GPA: 5.00 / 5.00</li></ul></li>
-    </ul>
+      <h2 id="research">Research &amp; Professional Experience</h2>
+      <ul>
+        <li><strong>Machine Learning Executive</strong> <span class="when">[Apr 2026 – Jun 2026]</span>
+          <ul>
+            <li><a href="https://evoliq.tech/">EVOLIQ Tech</a></li>
+            <li>Built machine learning models for time-series forecasting on confidential datasets.</li>
+          </ul></li>
+        <li><strong>Undergraduate Thesis: Bangla Meme Understanding</strong> <span class="when">[Mar 2025 – Jun 2026]</span>
+          <ul>
+            <li>Dept. of CSE, University of Dhaka. Supervisor: Md. Fahim Arefin, Assistant Professor.</li>
+            <li>Multimodal metaphor reasoning and culturally grounded interpretation in a low-resource language, resulting in BanglaMemeX (Findings of EMNLP 2026).</li>
+          </ul></li>
+        <li><strong>Political Meme Classification, CUET CSE Fest Data Challenge</strong> <span class="when">[Dec 2025]</span> <span class="tag">Top 10</span>
+          <ul><li>Fine-tuned vision-language models (Qwen 3, Gemma 3) with LoRA and applied GRPO-based reinforcement post-training.</li></ul></li>
+        <li><strong>Bengali Regional Dialect Speech Recognition, Bengali.AI–IUT Challenge</strong> <span class="when">[Apr 2024]</span> <span class="tag">8th of 47 teams</span>
+          <ul><li>Fine-tuned OpenAI Whisper on recordings from 373 speakers across ten regions, including data curation, transcript normalization and dialect-region classification.</li></ul></li>
+      </ul>
 
-    <h2 id="publications"><u>📚 Publications</u></h2>
-    <ul>
-      <li><strong><a href="https://arxiv.org/abs/2609.08029">BanglaMemeX: Advancing Cultural Metaphoric Image Interpretation in Bangla with a Multimodal Explainable Dataset</a></strong>
-        [2026]<br>
-        Md. Sadman Sakib, <strong>Zisan Mahmud</strong>, Md. Fahim Arefin, Md Fahim.<br>
-        <strong>Findings of EMNLP 2026</strong></li>
-      <li><strong><a href="https://arxiv.org/abs/2412.05641">Hyperedge Anomaly Detection with Hypergraph Neural Network</a></strong>
-        [2026]<br>
-        Md. Tanvir Alam, Md Mahmudur Rahman, Md. Fahim Arefin, Chowdhury Farhan Ahmed, <strong>Zisan Mahmud</strong>, Md. Sadman Sakib, Carson Leung.<br>
-        <strong>TMLR 2026</strong></li>
-    </ul>
+      <h2 id="awards">Honors, Awards &amp; Training</h2>
+      <ul>
+        <li><span class="when">[Jan 2026]</span> <strong>Best UI/UX Design</strong>, BUET CSE Fest Hackathon</li>
+        <li><span class="when">[Dec 2025]</span> <strong>Top 10</strong>, Political Meme Classification Challenge, CUET CSE Fest</li>
+        <li><span class="when">[Jul 2025]</span> <strong>International Summer School</strong>, IIT Bombay: "Group Testing: An Important Tool for Data Science" (Prof. Ajit Rajwade)</li>
+        <li><span class="when">[Apr 2024]</span> <strong>8th of 47 teams</strong>, Bengali.AI–IUT Regional ASR Challenge</li>
+        <li><span class="when">[2020]</span> <strong>General Scholarship</strong>, HSC</li>
+        <li><span class="when">[2018]</span> <strong>General Scholarship</strong>, SSC</li>
+      </ul>
 
-    <h2 id="teaching"><u>📝 Teaching Experiences</u></h2>
-    <ul>
-      <li><strong>Adjunct Lecturer</strong> [Sep 2026 – Present]
-        <ul>
-          <li><a href="https://www.iiuc.ac.bd/web/fse/cse">Department of CSE, International Islamic University Chittagong</a></li>
-          <li>Teach undergraduate Computer Algorithms theory and lab courses.</li>
-        </ul></li>
-    </ul>
+      <h2 id="skills">Skills</h2>
+      <ul class="skills">
+        <li><strong>Languages:</strong> Python, C, C++, Java</li>
+        <li><strong>ML / NLP:</strong> PyTorch, Scikit-learn, Hugging Face</li>
+        <li><strong>Data tools:</strong> NumPy, Pandas, Matplotlib, Jupyter Notebook</li>
+        <li><strong>Frameworks &amp; databases:</strong> FastAPI, MySQL, PostgreSQL</li>
+        <li><strong>Tools:</strong> Git, Docker, Linux, LaTeX</li>
+      </ul>
+    </main>
 
-    <h2 id="research"><u>🧪 Research &amp; Professional Experiences</u></h2>
-    <ul>
-      <li><strong>Machine Learning Executive</strong> [Apr 2026 – Jun 2026]
-        <ul>
-          <li><a href="https://evoliq.tech/">EVOLIQ Tech</a></li>
-          <li>Built machine learning models for time-series forecasting on confidential datasets.</li>
-        </ul></li>
-      <li><strong>Undergraduate Thesis: Bangla Meme Understanding</strong> [Mar 2025 – Jun 2026]
-        <ul>
-          <li>Department of CSE, University of Dhaka. Supervisor: Md. Fahim Arefin, Lecturer.</li>
-          <li>Multimodal metaphor reasoning and culturally grounded interpretation in a low-resource language; resulted in BanglaMemeX (Findings of EMNLP 2026).</li>
-        </ul></li>
-      <li><strong>Political Meme Classification, CUET CSE Fest Data Challenge</strong> [Dec 2025] (Top 10)
-        <ul><li>Fine-tuned vision-language models (Qwen 3, Gemma 3) with LoRA; applied GRPO-based reinforcement post-training.</li></ul></li>
-      <li><strong>Bengali Regional Dialect Speech Recognition, Bengali.AI–IUT Challenge</strong> [Apr 2024] (8th of 47 teams)
-        <ul><li>Fine-tuned OpenAI Whisper on recordings from 373 speakers across ten regions; included data curation, transcript normalization and dialect-region classification.</li></ul></li>
-    </ul>
-
-    <h2 id="projects"><u>💻 Projects</u></h2>
-    <ul>
-      <li><strong>CSEDU Departmental Web Portal</strong> [2025]
-        <ul><li>Official web portal of the Dept. of CSE, University of Dhaka, for students, faculty and visitors. React.js, FastAPI, MySQL. <a href="https://github.com/CSEDU-Website">Code</a></li></ul></li>
-      <li><strong>FunFuzz AR Learning Platform for Kids</strong> [2024]
-        <ul><li>EdTech platform using Augmented Reality (3D/GLB) for interactive learning. React.js, Spring Boot, PostgreSQL.</li></ul></li>
-      <li><strong>PastryTreat</strong> [2023]
-        <ul><li>Android food ordering and delivery app connecting users with restaurants. Java, Android, Firebase. <a href="https://github.com/zisan23/PastryTreat">Code</a></li></ul></li>
-    </ul>
-
-    <h2 id="awards"><u>🏆 Honors, Awards and Training</u></h2>
-    <ul>
-      <li>[2026] <strong>Best UI/UX Design</strong>, BUET CSE Fest Hackathon</li>
-      <li>[2025] <strong>Top 10</strong>, Political Meme Classification Challenge, CUET CSE Fest</li>
-      <li>[2025] <strong>International Summer School</strong>, IIT Bombay: "Group Testing: An Important Tool for Data Science" (Prof. Ajit Rajwade)</li>
-      <li>[2024] <strong>8th of 47 teams</strong>, Bengali.AI–IUT Regional ASR Challenge</li>
-      <li>[2020] <strong>General Scholarship</strong>, HSC</li>
-      <li>[2018] <strong>General Scholarship</strong>, SSC</li>
-    </ul>
-
-    <h2 id="skills"><u>🛠 Skills</u></h2>
-    <ul>
-      <li><strong>Languages:</strong> Python, C, C++, Java</li>
-      <li><strong>ML / NLP:</strong> PyTorch, Scikit-learn, Hugging Face</li>
-      <li><strong>Data tools:</strong> NumPy, Pandas, Matplotlib, Jupyter Notebook</li>
-      <li><strong>Other:</strong> FastAPI, MySQL, PostgreSQL, Git, Docker, Linux, LaTeX</li>
-    </ul>
-  </main>
+    <aside class="news" aria-label="Recent news">
+      <h2 id="news">Recent News</h2>
+      <ul>
+        <li><strong>September 2026</strong>: Joined International Islamic University Chittagong as an <em>Adjunct Lecturer</em> in the Dept. of CSE.</li>
+        <li><strong>2026</strong>: Started my M.Sc. in CSE at the University of Dhaka.</li>
+        <li><strong>2026</strong>: <a href="https://arxiv.org/abs/2609.08029">BanglaMemeX</a> accepted to <strong>Findings of EMNLP 2026</strong>.</li>
+        <li><strong>2026</strong>: <a href="https://arxiv.org/abs/2412.05641">Hyperedge Anomaly Detection with Hypergraph Neural Network</a> published in <strong>TMLR</strong>.</li>
+        <li><strong>April 2026</strong>: Started as a Machine Learning Executive at EVOLIQ Tech.</li>
+        <li><strong>January 2026</strong>: Won <strong>Best UI/UX Design</strong> at the BUET CSE Fest Hackathon.</li>
+        <li><strong>December 2025</strong>: <strong>Top 10</strong> in the Political Meme Classification Challenge, CUET CSE Fest.</li>
+        <li><strong>July 2025</strong>: Completed the IIT Bombay International Summer School on group testing for data science.</li>
+      </ul>
+    </aside>
+  </div>
 
   <footer>
-    <p>© <span id="year"></span> Zisan Mahmud</p>
+    <div class="inner">
+      <div class="follow">Follow:
+        <a href="https://github.com/zisan23" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/zisan260" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://orcid.org/0009-0002-3468-7579" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
+      </div>
+      <p>© <span id="year"></span> Zisan Mahmud</p>
+    </div>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script>
+    var root = document.documentElement;
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.getElementById('theme-btn').addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') !== 'dark';
+      root.setAttribute('data-theme', dark ? 'dark' : 'light');
+      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+    });
+
+  </script>
 </body>
 </html>
